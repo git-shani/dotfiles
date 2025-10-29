@@ -4,4 +4,22 @@ theme = "scarlet"
 
 line-number = "relative"
 color-modes = true 
-bufferline = "always"
+bufferline  = "always"
+
+[editor.cursor-shape]
+
+normal = "underline"
+insert = "underline"
+select = "block"
+
+[editor.statusline]
+
+mode.normal = "NORMAL :3"
+mode.insert = "INSERT ;3"
+mode.select = "VISUAL :D"
+
+left   = ["mode","file-name"]
+center = ["version-control"]
+right  = ["read-only-indicator","file-encoding","total-line-numbers"]
+
+separator = "/"
